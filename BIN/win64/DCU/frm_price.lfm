@@ -1,0 +1,86 @@
+inherited FrmPrice: TFrmPrice
+  Caption = 'Preço'
+  OnShow = FormShow
+  inherited PnlContent: TPanel
+    Height = 536
+    Top = 64
+    ClientHeight = 536
+    inherited DBGrid: TDBGrid
+      Height = 504
+      Columns = <      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'ID'
+          Width = 50
+          FieldName = 'id'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.MultiLine = True
+          Title.Caption = 'Marca'
+          FieldName = 'brand'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.MultiLine = True
+          Title.Caption = 'SuperMercado'
+          Width = 200
+          FieldName = 'supermarket'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'Valor'
+          Width = 100
+          FieldName = 'value'
+          DisplayFormat = 'R$ ##0.00'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'Data'
+          Width = 100
+          FieldName = 'date'
+          DisplayFormat = 'dd/mm/yyyy'
+        end>
+    end
+    inherited PnlAction: TPanel
+      Height = 536
+      ClientHeight = 536
+      inherited BtnAdd: TBitBtn
+        OnClick = BtnAddClick
+      end
+      inherited BtnEdit: TBitBtn
+        OnClick = BtnEditClick
+      end
+      inherited BtnDelete: TBitBtn
+        OnClick = BtnDeleteClick
+      end
+    end
+  end
+  inherited PnlHeader: TPanel
+    Height = 64
+    ClientHeight = 64
+    inherited EdtSearch: TEdit
+      Visible = False
+    end
+    inherited BtnSearch: TBitBtn
+      Visible = False
+    end
+    object LblProduct: TLabel[2]
+      Left = 0
+      Height = 64
+      Top = 0
+      Width = 800
+      Align = alClient
+      Alignment = taCenter
+      Caption = 'Product'
+      Font.Height = -27
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  inherited DsMaster: TDataSource
+    left = 680
+  end
+end

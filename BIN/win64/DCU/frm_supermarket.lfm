@@ -1,0 +1,44 @@
+inherited FrmSupermarket: TFrmSupermarket
+  Left = 1091
+  Top = 164
+  Caption = 'Supermercado'
+  OnShow = FormShow
+  inherited PnlContent: TPanel
+    inherited DBGrid: TDBGrid
+      Columns = <      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'ID'
+          Width = 60
+          FieldName = 'id'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'Nome'
+          Width = 480
+          FieldName = 'name'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'Ativo'
+          FieldName = 'active'
+        end>
+    end
+    inherited PnlAction: TPanel
+      inherited BtnAdd: TBitBtn
+        OnClick = BtnAddClick
+      end
+      inherited BtnEdit: TBitBtn
+        OnClick = BtnEditClick
+      end
+      inherited BtnDelete: TBitBtn
+        OnClick = BtnDeleteClick
+      end
+    end
+  end
+  inherited PnlHeader: TPanel
+    inherited BtnSearch: TBitBtn
+      OnClick = BtnSearchClick
+    end
+  end
+end

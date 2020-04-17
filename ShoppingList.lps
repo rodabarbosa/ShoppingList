@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="40">
+      <Unit0>
+        <Filename Value="ShoppingList.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="53" Y="23"/>
+        <UsageCount Value="119"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Lib\un_shoplist_setting.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="15" Y="51"/>
+        <UsageCount Value="119"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\SIRBFW\Lib\rb_system.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="241"/>
+        <CursorPos X="40" Y="260"/>
+        <UsageCount Value="117"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\SIRBFW\Lib\rb_data.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="40" Y="30"/>
+        <UsageCount Value="110"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="UI\frm_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <CursorPos X="39" Y="11"/>
+        <UsageCount Value="31"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="UI\frm_list.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmList"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="47"/>
+        <CursorPos X="44" Y="60"/>
+        <UsageCount Value="31"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="UI\frm_supermarket.pas"/>
+        <ComponentName Value="FrmSupermarket"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos X="19" Y="149"/>
+        <FoldState Value=" T3i40341211'"/>
+        <UsageCount Value="80"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="UI\frm_supermarket_dlg.pas"/>
+        <ComponentName Value="FrmSupermarketDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="98"/>
+        <CursorPos X="24" Y="102"/>
+        <UsageCount Value="76"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="UI\frm_product_dlg.pas"/>
+        <ComponentName Value="FrmProductDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="119"/>
+        <CursorPos X="20" Y="136"/>
+        <FoldState Value=" T3iA0A051$"/>
+        <UsageCount Value="70"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="UI\frm_brand.pas"/>
+        <ComponentName Value="FrmBrand"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="101"/>
+        <CursorPos X="34" Y="92"/>
+        <FoldState Value=" T4603 T3i103012B"/>
+        <UsageCount Value="107"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="UI\base\frm_base.pas"/>
+        <ComponentName Value="FrmBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="83"/>
+        <CursorPos X="36" Y="90"/>
+        <FoldState Value=" T3kI03+"/>
+        <UsageCount Value="105"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="UI\base\frm_grid_base.pas"/>
+        <ComponentName Value="FrmGridBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="13" Y="90"/>
+        <UsageCount Value="105"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="UI\base\frm_dialog_base.pas"/>
+        <ComponentName Value="FrmDialogBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="8"/>
+        <CursorPos X="13" Y="41"/>
+        <UsageCount Value="105"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="UI\frm_brand_dlg.pas"/>
+        <ComponentName Value="FrmBrandDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="72"/>
+        <CursorPos X="36" Y="85"/>
+        <UsageCount Value="105"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="UI\frm_category.pas"/>
+        <ComponentName Value="FrmCategory"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="112"/>
+        <CursorPos Y="102"/>
+        <FoldState Value=" T4601 T3i0034y"/>
+        <UsageCount Value="85"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="UI\frm_category_dlg.pas"/>
+        <ComponentName Value="FrmCategoryDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos Y="92"/>
+        <FoldState Value=" T3i109012Y"/>
+        <UsageCount Value="83"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="UI\frm_product.pas"/>
+        <ComponentName Value="FrmProduct"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="146"/>
+        <CursorPos X="19" Y="172"/>
+        <FoldState Value=" T3i50331311Q"/>
+        <UsageCount Value="71"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="UI\frm_price.pas"/>
+        <ComponentName Value="FrmPrice"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="60"/>
+        <FoldState Value=" T3i20C72"/>
+        <UsageCount Value="71"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="UI\frm_price_dlg.pas"/>
+        <ComponentName Value="FrmPriceDlg"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <CursorPos X="32" Y="72"/>
+        <FoldState Value=" T3iL03014J"/>
+        <UsageCount Value="53"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="UI\frm_base.pas"/>
+        <ComponentName Value="FrmBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="49"/>
+        <UsageCount Value="13"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="UI\frm_grid_base.pas"/>
+        <ComponentName Value="FrmGridBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="32" Y="23"/>
+        <UsageCount Value="13"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="618"/>
+        <CursorPos Y="637"/>
+        <UsageCount Value="2"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="..\SIRBFW\Lib\rb_types.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="65" Y="49"/>
+        <UsageCount Value="12"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2718"/>
+        <CursorPos Y="2738"/>
+        <UsageCount Value="2"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\usr\share\fpcsrc\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="178"/>
+        <CursorPos X="22" Y="195"/>
+        <UsageCount Value="5"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1205"/>
+        <CursorPos Y="1222"/>
+        <UsageCount Value="8"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="3"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\include\buttons.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="153"/>
+        <CursorPos Y="170"/>
+        <UsageCount Value="3"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\include\bitbtn.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos Y="65"/>
+        <UsageCount Value="3"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\include\containedaction.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="78"/>
+        <CursorPos Y="98"/>
+        <UsageCount Value="3"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="UI\frm_sprice.pas"/>
+        <ComponentName Value="FrmPrice"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="15"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="UI\frm_price.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="5"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="156"/>
+        <CursorPos X="23" Y="173"/>
+        <UsageCount Value="8"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="580"/>
+        <CursorPos Y="624"/>
+        <UsageCount Value="8"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="691"/>
+        <CursorPos X="3" Y="783"/>
+        <UsageCount Value="8"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="C:\usr\lib64\lazarus\lcl\extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="17"/>
+        <UsageCount Value="8"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="UI\frm_report_list.pas"/>
+        <ComponentName Value="FrmListReport"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="44"/>
+        <CursorPos X="7" Y="51"/>
+        <UsageCount Value="20"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="UI\base\frm_grid_base.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="UI\base\frm_dialog_base.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="..\..\..\..\..\..\usr\lib64\lazarus\components\lazreport\source\lr_class.pas"/>
+        <UnitName Value="LR_Class"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10133"/>
+        <CursorPos Y="10146"/>
+        <UsageCount Value="9"/>
+      </Unit39>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="UI\frm_product.pas"/>
+        <Line Value="181"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

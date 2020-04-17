@@ -1,0 +1,175 @@
+inherited FrmPriceDlg: TFrmPriceDlg
+  Left = 1260
+  Width = 570
+  Caption = 'Preço'
+  ClientWidth = 570
+  OnShow = FormShow
+  inherited PnlAction: TPanel
+    Width = 570
+    ClientWidth = 570
+    inherited BtnConfirm: TBitBtn
+      Left = 322
+      OnClick = BtnConfirmClick
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 24
+    Height = 18
+    Top = 32
+    Width = 17
+    Caption = 'ID'
+    ParentColor = False
+  end
+  object Label2: TLabel[2]
+    Left = 24
+    Height = 18
+    Top = 79
+    Width = 58
+    Caption = 'Produto'
+    ParentColor = False
+  end
+  object Label3: TLabel[3]
+    Left = 24
+    Height = 18
+    Top = 128
+    Width = 44
+    Caption = 'Marca'
+    ParentColor = False
+  end
+  object Label4: TLabel[4]
+    Left = 24
+    Height = 18
+    Top = 168
+    Width = 104
+    Caption = 'Supermercado'
+    ParentColor = False
+  end
+  object Label5: TLabel[5]
+    Left = 24
+    Height = 18
+    Top = 207
+    Width = 32
+    Caption = 'Data'
+    ParentColor = False
+  end
+  object Label6: TLabel[6]
+    Left = 24
+    Height = 18
+    Top = 250
+    Width = 38
+    Caption = 'Valor'
+    ParentColor = False
+  end
+  object Label7: TLabel[7]
+    Left = 24
+    Height = 18
+    Top = 292
+    Width = 69
+    Caption = 'Descrição'
+    ParentColor = False
+  end
+  object EdtId: TEdit[8]
+    Left = 148
+    Height = 35
+    Top = 24
+    Width = 400
+    Color = 7663085
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object CbxBrand: TComboBox[9]
+    Left = 148
+    Height = 35
+    Top = 114
+    Width = 400
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Selecione a marca'
+    )
+    TabOrder = 2
+    Text = 'Selecione a marca'
+  end
+  object CbxSupermarket: TComboBox[10]
+    Left = 148
+    Height = 35
+    Top = 158
+    Width = 400
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Selecione o supermercado'
+    )
+    TabOrder = 3
+    Text = 'Selecione o supermercado'
+  end
+  object EdtProduct: TEdit[11]
+    Left = 148
+    Height = 35
+    Top = 70
+    Width = 400
+    CharCase = ecUppercase
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object MmoDescription: TMemo[12]
+    Left = 152
+    Height = 96
+    Top = 288
+    Width = 396
+    CharCase = ecUppercase
+    TabOrder = 6
+  end
+  object DtpDate: TDateTimePicker[13]
+    Left = 152
+    Height = 28
+    Top = 203
+    Width = 129
+    ArrowShape = asModernLarger
+    CenturyFrom = 2016
+    MaxDate = 2958465
+    MinDate = 42370
+    Font.Height = -19
+    ParentFont = False
+    TabOrder = 5
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    NullInputAllowed = False
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    Date = 42644
+    Time = 0.846307106483437
+    UseDefaultSeparators = True
+    AutoButtonSize = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object EdtValue: TEdit[14]
+    Left = 152
+    Height = 35
+    Top = 241
+    Width = 129
+    MaxLength = 6
+    NumbersOnly = True
+    TabOrder = 7
+  end
+  inherited ActListMaster: TActionList[15]
+    left = 432
+    top = 200
+  end
+  inherited ImgListMaster: TImageList[16]
+    left = 344
+    top = 200
+  end
+  inherited QryMaster: TSQLQuery[17]
+    left = 528
+    top = 416
+  end
+  inherited DsMaster: TDataSource[18]
+    left = 32
+    top = 416
+  end
+end

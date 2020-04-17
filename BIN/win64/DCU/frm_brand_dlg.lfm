@@ -1,0 +1,88 @@
+inherited FrmBrandDlg: TFrmBrandDlg
+  Height = 245
+  Width = 464
+  Caption = 'Marca'
+  ClientHeight = 245
+  ClientWidth = 464
+  OnShow = FormShow
+  inherited PnlAction: TPanel
+    Top = 163
+    Width = 464
+    ClientWidth = 464
+    inherited BtnCancel: TBitBtn
+      Left = 80
+      Top = 32
+      Caption = 'Cancelar'
+    end
+    inherited BtnConfirm: TBitBtn
+      Left = 288
+      Top = 32
+      Caption = 'Confirmar'
+      ModalResult = 1
+      OnClick = BtnConfirmClick
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 24
+    Height = 18
+    Top = 35
+    Width = 17
+    Caption = 'ID'
+    ParentColor = False
+  end
+  object EdtId: TEdit[2]
+    Left = 96
+    Height = 35
+    Top = 26
+    Width = 352
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object EdtName: TEdit[3]
+    Left = 96
+    Height = 35
+    Top = 72
+    Width = 352
+    CharCase = ecUppercase
+    TabOrder = 2
+  end
+  object Label2: TLabel[4]
+    Left = 24
+    Height = 18
+    Top = 77
+    Width = 42
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  inherited ActListMaster: TActionList[5]
+    left = 312
+    top = 112
+  end
+  inherited ImgListMaster: TImageList[6]
+    left = 408
+    top = 112
+  end
+  inherited QryMaster: TSQLQuery[7]
+    SQL.Strings = (
+      'SELECT * FROM brand WHERE brandid = :pId'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO brand(name) VALUES(:pName)'
+    )
+    UpdateSQL.Strings = (
+      'UPDATE brand SET name = :pNme WHERE brandid = :pId'
+    )
+    Params = <    
+      item
+        DataType = ftInteger
+        Name = 'pId'
+        ParamType = ptInput
+      end>
+    left = 160
+    top = 112
+  end
+  inherited DsMaster: TDataSource[8]
+    left = 96
+    top = 112
+  end
+end

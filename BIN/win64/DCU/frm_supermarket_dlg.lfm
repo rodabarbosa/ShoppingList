@@ -1,0 +1,90 @@
+inherited FrmSupermarketDlg: TFrmSupermarketDlg
+  Left = 1172
+  Height = 259
+  Width = 449
+  BorderIcons = [biSystemMenu]
+  Caption = 'Supermercado'
+  ClientHeight = 259
+  ClientWidth = 449
+  OnShow = FormShow
+  inherited PnlAction: TPanel
+    Top = 177
+    Width = 449
+    ClientWidth = 449
+    inherited BtnCancel: TBitBtn
+      Left = 48
+    end
+    inherited BtnConfirm: TBitBtn
+      Left = 256
+      Anchors = [akTop, akRight]
+      OnClick = BtnConfirmClick
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 20
+    Height = 18
+    Top = 43
+    Width = 17
+    Caption = 'ID'
+    ParentColor = False
+  end
+  object Label2: TLabel[2]
+    Left = 20
+    Height = 18
+    Top = 87
+    Width = 42
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  object Label3: TLabel[3]
+    Left = 20
+    Height = 18
+    Top = 130
+    Width = 39
+    Caption = 'Ativo'
+    ParentColor = False
+  end
+  object EdtId: TEdit[4]
+    Left = 82
+    Height = 35
+    Top = 32
+    Width = 344
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object EdtName: TEdit[5]
+    Left = 82
+    Height = 35
+    Top = 77
+    Width = 344
+    CharCase = ecUppercase
+    TabOrder = 2
+  end
+  object ChkActive: TCheckBox[6]
+    Left = 82
+    Height = 23
+    Top = 128
+    Width = 53
+    Caption = 'Sim'
+    Checked = True
+    OnChange = ChkActiveChange
+    State = cbChecked
+    TabOrder = 3
+  end
+  inherited ActListMaster: TActionList[7]
+    left = 144
+    top = 160
+  end
+  inherited ImgListMaster: TImageList[8]
+    left = 32
+    top = 160
+  end
+  inherited QryMaster: TSQLQuery[9]
+    left = 344
+    top = 160
+  end
+  inherited DsMaster: TDataSource[10]
+    left = 264
+    top = 160
+  end
+end

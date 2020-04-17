@@ -1,0 +1,73 @@
+inherited FrmProduct: TFrmProduct
+  Left = 1079
+  Top = 185
+  Caption = 'Produto'
+  OnShow = FormShow
+  inherited PnlContent: TPanel
+    inherited DBGrid: TDBGrid
+      Width = 632
+      Columns = <      
+        item
+          PickList.Strings = (          )
+          Title.Alignment = taCenter
+          Title.Caption = 'ID'
+          Width = 50
+          FieldName = 'id'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Alignment = taCenter
+          Title.Caption = 'Nome'
+          Width = 365
+          FieldName = 'name'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Alignment = taCenter
+          Title.Caption = 'Quantidade'
+          Width = 100
+          FieldName = 'quantity'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Alignment = taCenter
+          Title.Caption = 'Qtd Ideal'
+          Width = 80
+          FieldName = 'ideal_quantity'
+        end>
+    end
+    inherited PnlAction: TPanel
+      inherited BtnAdd: TBitBtn
+        OnClick = BtnAddClick
+      end
+      inherited BtnEdit: TBitBtn
+        OnClick = BtnEditClick
+      end
+      inherited BtnDelete: TBitBtn
+        OnClick = BtnDeleteClick
+      end
+      object BtnPrice: TBitBtn[3]
+        Left = 0
+        Height = 40
+        Top = 176
+        Width = 110
+        Action = alPrice
+        OnClick = BtnPriceClick
+        TabOrder = 3
+      end
+    end
+  end
+  inherited PnlHeader: TPanel
+    inherited BtnSearch: TBitBtn
+      OnClick = BtnSearchClick
+    end
+  end
+  inherited ActListMaster: TActionList
+    inherited alAdd: TAction
+      OnExecute = alAddExecute
+    end
+    inherited alPrice: TAction
+      OnExecute = alPriceExecute
+    end
+  end
+end

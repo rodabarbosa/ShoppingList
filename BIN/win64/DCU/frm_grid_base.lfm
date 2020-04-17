@@ -1,0 +1,128 @@
+inherited FrmGridBase: TFrmGridBase
+  Left = 900
+  Top = 173
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'FrmGridBase'
+  OnResize = FormResize
+  OnShow = FormShow
+  object PnlContent: TPanel[0]
+    Left = 0
+    Height = 504
+    Top = 96
+    Width = 800
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'PnlContent'
+    ClientHeight = 504
+    ClientWidth = 800
+    TabOrder = 0
+    object DBGrid: TDBGrid
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Side = asrBottom
+      Left = 16
+      Height = 472
+      Top = 0
+      Width = 640
+      Align = alCustom
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      Color = clWindow
+      Columns = <>
+      DataSource = DsMaster
+      Options = [dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ReadOnly = True
+      Scrollbars = ssVertical
+      TabOrder = 0
+    end
+    object PnlAction: TPanel
+      Left = 672
+      Height = 504
+      Top = 0
+      Width = 128
+      Align = alRight
+      Caption = 'PnlAction'
+      ClientHeight = 504
+      ClientWidth = 128
+      TabOrder = 1
+      object BtnAdd: TBitBtn
+        Left = 0
+        Height = 40
+        Top = 8
+        Width = 110
+        Action = alAdd
+        TabOrder = 0
+      end
+      object BtnEdit: TBitBtn
+        Left = 0
+        Height = 40
+        Top = 56
+        Width = 110
+        Action = alEdit
+        TabOrder = 1
+      end
+      object BtnDelete: TBitBtn
+        Left = 0
+        Height = 40
+        Top = 104
+        Width = 110
+        Action = alDelete
+        TabOrder = 2
+      end
+    end
+  end
+  object PnlHeader: TPanel[1]
+    Left = 0
+    Height = 96
+    Top = 0
+    Width = 800
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'PnlHeader'
+    ClientHeight = 96
+    ClientWidth = 800
+    TabOrder = 1
+    object EdtSearch: TEdit
+      Left = 16
+      Height = 35
+      Top = 46
+      Width = 632
+      CharCase = ecUppercase
+      TabOrder = 0
+    end
+    object BtnSearch: TBitBtn
+      Left = 672
+      Height = 40
+      Top = 48
+      Width = 110
+      Action = alSearch
+      TabOrder = 1
+    end
+  end
+  inherited ActListMaster: TActionList[2]
+    left = 40
+    top = 536
+    inherited alExit: TAction
+      ImageIndex = -1
+    end
+    inherited alRgBrand: TAction
+      OnExecute = nil
+    end
+    inherited alClose: TAction
+      OnExecute = alCloseExecute
+    end
+    inherited alEdit: TAction
+      OnExecute = alEditExecute
+    end
+  end
+  inherited ImgListMaster: TImageList[3]
+    left = 144
+    top = 536
+  end
+  inherited QryMaster: TSQLQuery[4]
+    left = 736
+    top = 536
+  end
+  inherited DsMaster: TDataSource[5]
+    left = 656
+    top = 536
+  end
+end

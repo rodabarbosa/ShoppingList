@@ -1,0 +1,39 @@
+inherited FrmCategory: TFrmCategory
+  Left = 1120
+  Top = 156
+  Caption = 'Categoria'
+  OnShow = FormShow
+  inherited PnlContent: TPanel
+    inherited DBGrid: TDBGrid
+      Columns = <      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'ID'
+          Width = 60
+          FieldName = 'id'
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = 'Nome'
+          Width = 640
+          FieldName = 'name'
+        end>
+    end
+    inherited PnlAction: TPanel
+      inherited BtnAdd: TBitBtn
+        OnClick = BtnAddClick
+      end
+      inherited BtnEdit: TBitBtn
+        OnClick = BtnEditClick
+      end
+      inherited BtnDelete: TBitBtn
+        OnClick = BtnDeleteClick
+      end
+    end
+  end
+  inherited PnlHeader: TPanel
+    inherited BtnSearch: TBitBtn
+      OnClick = BtnSearchClick
+    end
+  end
+end

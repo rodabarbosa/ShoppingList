@@ -1,0 +1,122 @@
+inherited FrmProductDlg: TFrmProductDlg
+  Left = 1157
+  Height = 374
+  Top = 204
+  Width = 460
+  Caption = 'Produto'
+  ClientHeight = 374
+  ClientWidth = 460
+  OnShow = FormShow
+  inherited PnlAction: TPanel
+    Top = 292
+    Width = 460
+    ClientWidth = 460
+    inherited BtnCancel: TBitBtn
+      Left = 64
+    end
+    inherited BtnConfirm: TBitBtn
+      Left = 248
+      OnClick = BtnConfirmClick
+    end
+  end
+  object Label1: TLabel[1]
+    Left = 24
+    Height = 18
+    Top = 36
+    Width = 17
+    Caption = 'ID'
+    ParentColor = False
+  end
+  object Label2: TLabel[2]
+    Left = 24
+    Height = 18
+    Top = 80
+    Width = 42
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  object Label3: TLabel[3]
+    Left = 24
+    Height = 18
+    Top = 176
+    Width = 126
+    Caption = 'Quantidade Atual'
+    ParentColor = False
+  end
+  object Label4: TLabel[4]
+    Left = 24
+    Height = 18
+    Top = 224
+    Width = 123
+    Caption = 'Quantidade Ideal'
+    ParentColor = False
+  end
+  object Label5: TLabel[5]
+    Left = 24
+    Height = 18
+    Top = 128
+    Width = 67
+    Caption = 'Categoria'
+    ParentColor = False
+  end
+  object EdtID: TEdit[6]
+    Left = 168
+    Height = 35
+    Top = 24
+    Width = 268
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object EdtName: TEdit[7]
+    Left = 168
+    Height = 35
+    Top = 71
+    Width = 268
+    CharCase = ecUppercase
+    TabOrder = 2
+  end
+  object CbxCategory: TComboBox[8]
+    Left = 168
+    Height = 35
+    Top = 120
+    Width = 268
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Selecione a categoria'
+    )
+    TabOrder = 3
+    Text = 'Selecione a categoria'
+  end
+  object SpnQuantity: TSpinEdit[9]
+    Left = 168
+    Height = 35
+    Top = 168
+    Width = 268
+    TabOrder = 4
+  end
+  object SpnIdealQuantity: TSpinEdit[10]
+    Left = 168
+    Height = 35
+    Top = 216
+    Width = 266
+    OnChange = SpnIdealQuantityChange
+    TabOrder = 5
+  end
+  inherited ActListMaster: TActionList[11]
+    left = 168
+    top = 272
+  end
+  inherited ImgListMaster: TImageList[12]
+    left = 56
+    top = 272
+  end
+  inherited QryMaster: TSQLQuery[13]
+    left = 368
+    top = 272
+  end
+  inherited DsMaster: TDataSource[14]
+    left = 288
+    top = 272
+  end
+end

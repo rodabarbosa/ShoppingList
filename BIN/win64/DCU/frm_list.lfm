@@ -1,0 +1,237 @@
+object FrmList: TFrmList
+  Left = 1101
+  Height = 600
+  Top = 148
+  Width = 800
+  Align = alClient
+  Caption = 'FrmList'
+  ClientHeight = 600
+  ClientWidth = 800
+  OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
+  LCLVersion = '1.6.0.1'
+  WindowState = wsMaximized
+  object PnlCenter: TPanel
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 590
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'PnlCenter'
+    ClientHeight = 600
+    ClientWidth = 590
+    TabOrder = 0
+    object DBGridList: TDBGrid
+      Left = 0
+      Height = 600
+      Top = 0
+      Width = 590
+      Align = alClient
+      Color = clWindow
+      Columns = <      
+        item
+          Title.Alignment = taCenter
+          Title.Caption = 'Código'
+          Width = 60
+          FieldName = 'id'
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Caption = 'Produto'
+          Width = 120
+          FieldName = 'name'
+        end      
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Caption = 'Quantidade'
+          Width = 85
+          FieldName = 'qtd'
+        end      
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Caption = 'Data'
+          Width = 100
+          FieldName = 'date'
+        end      
+        item
+          Alignment = taCenter
+          Title.Alignment = taCenter
+          Title.Caption = 'Preço'
+          Width = 80
+          FieldName = 'value'
+        end      
+        item
+          Title.Caption = 'price'
+          Visible = False
+          FieldName = 'price'
+        end      
+        item
+          Title.Caption = 'Supermercado'
+          Visible = False
+          FieldName = 'supermarket'
+        end>
+      DataSource = DsList
+      Scrollbars = ssAutoVertical
+      TabOrder = 0
+    end
+  end
+  object PnlRight: TPanel
+    Left = 590
+    Height = 600
+    Top = 0
+    Width = 210
+    Align = alRight
+    BevelOuter = bvNone
+    Caption = 'PnlRight'
+    ClientHeight = 600
+    ClientWidth = 210
+    TabOrder = 1
+    object BitBtn1: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 8
+      Width = 180
+      Caption = 'Imprimir'
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000000000000000
+        00000000000000000000000000000000004700000092000000B3000000B30000
+        0092000000470000000000000000000000000000000000000000000000000000
+        0000000000000000003A000000EB000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000EB0000003B000000000000000000000000000000000000
+        000000000062000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000630000000000000000000000000000
+        003A000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF010101FF000000FF0000003A00000000000000000000
+        00EB515151FF6A6A6AFFDEDEDEFFB5B5B5FFB9B9B9FFB9B9B9FFB9B9B9FFB9B9
+        B9FFB6B6B6FFE4E4E4FF686868FF5E5E5EFF000000EC00000000000000480000
+        00FFBABABAFFFFFFFFFFA4A4A4FF2A2A2AFF3A3A3AFF3F3F3FFF3F3F3FFF3D3D
+        3DFF2A2A2AFF8A8A8AFFFFFFFFFFDADADAFF000000FF00000047000000930000
+        00FFB9B9B9FFFFFFFFFF676767FF000000FF727272FF969696FF969696FF8A8A
+        8AFF000000FF474747FFFFFFFFFFD8D8D8FF000000FF00000092000000B40000
+        00FFBBBBBBFFFFFFFFFFFFFFFFFFF9F9F9FFF7F7F7FFF7F7F7FFF7F7F7FFF7F7
+        F7FFF9F9F9FFFFFFFFFFFFFFFFFFDBDBDBFF000000FF000000B3000000B40000
+        00FF7C7C7CFFC4C4C4FFC1C1C1FFC1C1C1FFC3C3C3FFC3C3C3FFC3C3C3FFC3C3
+        C3FFC2C2C2FFC0C0C0FFC4C4C4FF969696FF000000FF000000B3000000930000
+        00FF050505FF484848FF9B9B9BFF969696FF4F4F4FFF525252FF525252FF5252
+        52FF747474FFBDBDBDFF454545FF101010FF000000FF00000092000000480000
+        00FF000000FF000000FF717171FF585858FF000000FF000000FF000000FF0000
+        00FF2E2E2EFF999999FF000000FF000000FF000000FF00000048000000000000
+        00EC000000FF000000FF000000FF2F2F2FFF000000FF000000FF000000FF0000
+        00FF2C2C2CFF000000FF000000FF000000FF000000EC00000000000000000000
+        003B000000FF000000FF000000FF464646FF3D3D3DFF3D3D3DFF3D3D3DFF3D3D
+        3DFF4F4F4FFF000000FF000000FF000000FF0000003B00000000000000000000
+        000000000063000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000640000000000000000000000000000
+        0000000000000000003B000000EC000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000ED0000003B000000000000000000000000000000000000
+        00000000000000000000000000000000004800000093000000B4000000B40000
+        0093000000480000000000000000000000000000000000000000
+      }
+      OnClick = BitBtn1Click
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 72
+      Width = 180
+      Caption = 'BitBtn2'
+      TabOrder = 1
+    end
+    object BitBtn3: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 120
+      Width = 180
+      Caption = 'BitBtn3'
+      TabOrder = 2
+    end
+    object BitBtn4: TBitBtn
+      Left = 16
+      Height = 40
+      Top = 168
+      Width = 180
+      Caption = 'BitBtn4'
+      TabOrder = 3
+    end
+  end
+  object DsList: TDataSource
+    DataSet = QryList
+    left = 134
+    top = 89
+  end
+  object QryList: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'name'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end    
+      item
+        Name = 'qtd'
+        DataType = ftLargeint
+        Precision = -1
+      end    
+      item
+        Name = 'date'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'value'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'price'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'supermarket'
+        DataType = ftString
+        Precision = -1
+        Size = 120
+      end>
+    SQL.Strings = (
+      'SELECT p.id, p.name, (p.ideal_quantity - p.quantity) as qtd, strftime(''%d/%m/%Y'',tmp.date) AS date, ''R$ '' || pc.value AS value, pc.value as price, s.name AS supermarket'
+      'FROM product p LEFT JOIN (SELECT id, product_id, MAX(date) AS date FROM price GROUP BY product_id) tmp ON tmp.product_id = p.id'
+      '               LEFT JOIN price pc ON tmp.id = pc.id LEFT JOIN supermarket s ON s.id = pc.supermarket_id'
+      'WHERE p.quantity < p.ideal_quantity'
+      'ORDER BY p.name'
+    )
+    Options = []
+    Params = <>
+    left = 208
+    top = 88
+  end
+  object frReport1: TfrReport
+    Dataset = frUserDataset1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    RebuildPrinter = True
+    DataType = dtDataSet
+    Title = 'Lista de Compra'
+    left = 624
+    top = 496
+  end
+  object frUserDataset1: TfrUserDataset
+    left = 712
+    top = 496
+  end
+end

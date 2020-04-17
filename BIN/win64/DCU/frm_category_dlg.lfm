@@ -1,0 +1,68 @@
+inherited FrmCategoryDlg: TFrmCategoryDlg
+  Height = 260
+  Width = 450
+  Caption = 'Categoria'
+  ClientHeight = 260
+  ClientWidth = 450
+  OnShow = FormShow
+  inherited PnlAction: TPanel
+    Top = 178
+    Width = 450
+    ClientWidth = 450
+    inherited BtnCancel: TBitBtn
+      Left = 32
+    end
+    inherited BtnConfirm: TBitBtn
+      Left = 272
+      OnClick = BtnConfirmClick
+    end
+  end
+  object EdtId: TEdit[1]
+    Left = 104
+    Height = 35
+    Top = 40
+    Width = 328
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object Label1: TLabel[2]
+    Left = 24
+    Height = 18
+    Top = 48
+    Width = 17
+    Caption = 'ID'
+    ParentColor = False
+  end
+  object EdtName: TEdit[3]
+    Left = 104
+    Height = 35
+    Top = 96
+    Width = 328
+    CharCase = ecUppercase
+    TabOrder = 2
+  end
+  object Label2: TLabel[4]
+    Left = 24
+    Height = 18
+    Top = 107
+    Width = 42
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  inherited ActListMaster: TActionList[5]
+    left = 368
+    top = 136
+  end
+  inherited ImgListMaster: TImageList[6]
+    left = 264
+    top = 136
+  end
+  inherited QryMaster: TSQLQuery[7]
+    left = 136
+    top = 136
+  end
+  inherited DsMaster: TDataSource[8]
+    left = 32
+    top = 136
+  end
+end
